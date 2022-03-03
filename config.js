@@ -11,8 +11,7 @@ exports.user_mysql = "main";
 exports.hive_name = "hive-153018";
 exports.image_list = `![`+d+`.png](https://cdn.steemitimages.com/DQmbXSrdwm2MntCHrKSyfhAgNtQhMXNdUXK7zv8ztYAHzCV/`+d+`.png)`;
 exports.title_name = "SteemFamily";
-exports.url_post = `technical-post-for-plagiarism-suspicion-check-moderators-2022-part-1
-`;
+exports.url_post = `technical-post-for-plagiarism-suspicion-check-moderators-2022-part-1`;
 exports.moderators_list = "@greatketty";
 
 
