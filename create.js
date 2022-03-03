@@ -28,7 +28,7 @@ if(err) console.log(err);
 else console.log("Таблица создана");
 });
 
-let sql = `create table if not exists ${hive}.spisok( id int primary key auto_increment, author varchar(255) UNIQUE KEY)`;
+let sql = `create table if not exists ${hive_name}.spisok( id int primary key auto_increment, author varchar(255) UNIQUE KEY)`;
 console.log(sql);						 
 
 connection.query(sql, function(err, results) {
@@ -36,7 +36,7 @@ if(err) console.log(err);
 else console.log("Таблица создана");
 });
 
-let sql2 = `create table if not exists ${hive}.post_number( id int primary key auto_increment, number int)`;
+let sql2 = `create table if not exists ${hive_name}.post_number( id int primary key auto_increment, number int)`;
 console.log(sql2);						 
 
 connection.query(sql2, function(err, results) {
