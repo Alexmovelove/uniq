@@ -1,7 +1,7 @@
 const mysql = require("mysql2");
 const steem = require('steem');
 const fs = require("fs");    
-var settings = require('../config.js');
+var settings = require('./config.js');
 
 let body3R = '';
 let num_day = settings.num_day;
