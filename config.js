@@ -14,4 +14,6 @@ exports.title_name = "SteemFamily";
 exports.url_post = `
 ![Checking The Uniqueness SteemFamily (1).png](https://cdn.steemitimages.com/DQmVKcXUyc38bw7P9cCfARZwZbtVXwUhjYF2K1bNnK6BXHF/Checking%20The%20Uniqueness%20SteemFamily%20(1).png)
 `;
+exports.moderators_list = "@greatketty";
+
 

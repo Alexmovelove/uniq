@@ -12,6 +12,7 @@ let password_mysql = settings.password_mysql;
 let user_mysql = settings.user_mysql;
 let title_name = settings.title_name;
 let image_list = settings.image_list;
+let moderators_list = settings.moderators_list;
 
 config = {
   host: "localhost",
@@ -166,7 +167,7 @@ const connection = mysql.createConnection(config);
 						{
 							if (users[post_number].length<500)
 							{
-								answer2 = url+`<BR><br>`+tests+`% <br><br>` +  users[post_number].length +`<br><br>Possible plagiarism detected from <br>`+data.matches[0].url+`<br><br>@ac-cheetah `;
+								answer2 = url+`<BR><br>`+tests+`% <br><br>` +  users[post_number].length +`<br><br>Possible plagiarism detected from <br>`+data.matches[0].url+`<br><br>@ac-cheetah <br><br>`+moderators_list;
 								
 									console.log(answer2);
 
@@ -186,7 +187,7 @@ const connection = mysql.createConnection(config);
 							}
 							else
 							{
-								answer2 = answer2 = url+`<BR>`+tests+`% <br> Possible plagiarism detected from<br>`+data.matches[0].url+`<br>`+`<br>@ac-cheetah `;
+								answer2 = answer2 = url+`<BR>`+tests+`% <br> Possible plagiarism detected from<br>`+data.matches[0].url+`<br>`+`<br>@ac-cheetah <br><br>`+moderators_list;
 	
 	console.log(answer2);
 	
