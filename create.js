@@ -23,7 +23,7 @@ config = {
 
 const connection = mysql.createConnection(config);
 
-let sql3 = `create database ${hive_name}`;
+let sql3 = `create database ${bd_name}`;
 console.log(sql3);						 
 
 connection.query(sql3, function(err, results) {
@@ -31,7 +31,7 @@ if(err) console.log(err);
 else console.log("Таблица создана");
 });
 
-let sql = `create table if not exists ${hive_name}.spisok( id int primary key auto_increment, author varchar(255) UNIQUE KEY)`;
+let sql = `create table if not exists ${bd_name}.spisok( id int primary key auto_increment, author varchar(255) UNIQUE KEY)`;
 console.log(sql);						 
 
 connection.query(sql, function(err, results) {
@@ -39,7 +39,7 @@ if(err) console.log(err);
 else console.log("Таблица создана");
 });
 
-let sql2 = `create table if not exists ${hive_name}.post_number( id int primary key auto_increment, number int)`;
+let sql2 = `create table if not exists ${bd_name}.post_number( id int primary key auto_increment, number int)`;
 console.log(sql2);						 
 
 connection.query(sql2, function(err, results) {
@@ -47,7 +47,7 @@ if(err) console.log(err);
 else console.log("Таблица создана");
 });
 
-const sql4 = `INSERT INTO ${hive_name}.post_number(id, number) VALUES('1','0')`;
+const sql4 = `INSERT INTO ${bd_name}.post_number(id, number) VALUES('1','0')`;
 console.log(sql4);						 
 								 
 connection.query(sql4, function(err, results) {
