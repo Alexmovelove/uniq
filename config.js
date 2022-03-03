@@ -11,8 +11,7 @@ exports.user_mysql = "main";
 exports.hive_name = "hive-153018";
 exports.image_list = `![`+d+`.png](https://cdn.steemitimages.com/DQmbXSrdwm2MntCHrKSyfhAgNtQhMXNdUXK7zv8ztYAHzCV/`+d+`.png)`;
 exports.title_name = "SteemFamily";
-exports.url_post = `
-![Checking The Uniqueness SteemFamily (1).png](https://cdn.steemitimages.com/DQmVKcXUyc38bw7P9cCfARZwZbtVXwUhjYF2K1bNnK6BXHF/Checking%20The%20Uniqueness%20SteemFamily%20(1).png)
+exports.url_post = `technical-post-for-plagiarism-suspicion-check-moderators-2022-part-1
 `;
 exports.moderators_list = "@greatketty";
 

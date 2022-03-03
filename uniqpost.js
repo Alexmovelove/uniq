@@ -32,9 +32,8 @@ const connection = mysql.createConnection(config);
 
 
 
-	let wifkey = '5JUERWQ7cu4RDYHMoEtmhVfu3MxCUZ9fo2AHWCigwT9LvVz1eFb';
-	let votey = "alexmove";
-	
+let wifkey = '5JUERWQ7cu4RDYHMoEtmhVfu3MxCUZ9fo2AHWCigwT9LvVz1eFb';
+let votey = "alexmove";
 
 
 	let sql = `SELECT * FROM post_number`   ;
