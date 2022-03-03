@@ -46,7 +46,6 @@ let week = `
 ------------|-------------|------------|-------------|----|-----|`;
 
 
-const fs = require("fs");            
 fs.appendFileSync("./"+bd_name+d+".txt",full);
 fs.appendFileSync("./"+bd_name+"week.txt",week);
 
