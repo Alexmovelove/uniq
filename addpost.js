@@ -30,8 +30,6 @@ console.log(d);
 let mytable = 'p'+d;
 let mytable_p = mytable;
 
-const mysql = require("mysql2");
-
 const sql = `SELECT * FROM spisok`;
  
 
