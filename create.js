@@ -20,7 +20,7 @@ config = {
 
 const connection = mysql.createConnection(config);
 
-let sql3 = `create database ${hive}`;
+let sql3 = `create database ${hive_name}`;
 console.log(sql3);						 
 
 connection.query(sql3, function(err, results) {
@@ -44,7 +44,7 @@ if(err) console.log(err);
 else console.log("Таблица создана");
 });
 
-const sql4 = `INSERT INTO ${hive}.post_number(id, number) VALUES('1','0')`;
+const sql4 = `INSERT INTO ${hive_name}.post_number(id, number) VALUES('1','0')`;
 console.log(sql4);						 
 								 
 connection.query(sql4, function(err, results) {
