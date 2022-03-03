@@ -102,7 +102,6 @@ Have a nice day!
 
 
 	
-      const fs = require("fs");            
 	  fs.appendFileSync("./"+bd_name+d+".txt",full);
 		
 		
