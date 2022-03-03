@@ -34,7 +34,7 @@ let votey = "alexmove";
 	d = d.replace(/-/gi, '');
 	
 
-let accounts = fs.readFileSync('report'+d+'.txt').toString()
+let accounts = fs.readFileSync("./"+bd_name+d+".txt").toString()
 	
 		var currentPath = process.cwd();
 console.log(currentPath);
@@ -52,7 +52,7 @@ console.log(accounts);
 let permlink = new Date().toISOString().replace(/[^a-zA-Z0-9]+/g, '').toLowerCase();
 
 console.log(permlink);
-let title = "Test Mode Report Everyday"+ title_name +"Checking The Uniqueness "+d;
+let title = "Report Everyday"+ title_name +"Checking The Uniqueness "+d;
 
 
 steem.broadcast.comment(

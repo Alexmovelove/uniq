@@ -30,7 +30,7 @@ let votey = "alexmove";
 	d = d.replace(/-/gi, '');
 	
 
-let accounts = fs.readFileSync(bd_name+'week.txt').toString();
+let accounts = fs.readFileSync("./"+bd_name+"week.txt").toString();
 	console.log(accounts);
 
 		var currentPath = process.cwd();
@@ -59,7 +59,7 @@ console.log(accounts);
 let permlink = new Date().toISOString().replace(/[^a-zA-Z0-9]+/g, '').toLowerCase();
 
 console.log(permlink);
-let title = "Test Mode Weekly Report (4 day). "+title_name + " Checking The Uniqueness "+d;
+let title = "Weekly Report. "+title_name + " Checking The Uniqueness "+d;
 
 
 
