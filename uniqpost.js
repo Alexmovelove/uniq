@@ -143,7 +143,7 @@ let votey = "alexmove";
 
 						if (tests > 85)
 						{
-							 answer2 = `<BR>` + url+`<BR>`+tests+`% <br> The uniqueness of the text is checked - everything is OK! Thanks! High level of uniqueness: `+tests+`%`;
+							 answer2 = url+`<BR>`+tests+`% <br> The uniqueness of the text is checked - everything is OK! Thanks! High level of uniqueness: `+tests+`%`;
 							 
 							 	console.log(answer2);
 	
