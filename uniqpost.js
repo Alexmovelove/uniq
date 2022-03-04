@@ -8,6 +8,7 @@ let num_day = settings.num_day;
 let bd_name = settings.bd_name;
 let hive_name = settings.hive_name;
 let url_post = settings.url_post;
+let url_ok = settings.url_ok;
 let password_mysql = settings.password_mysql;
 let user_mysql = settings.user_mysql;
 let title_name = settings.title_name;
@@ -146,12 +147,10 @@ let votey = "alexmove";
 							 
 							 	console.log(answer2);
 	
-					test2 = "check-for-uniqueness-ok-100-or-more-80";
-					
 		steem.broadcast.comment(
 						wifkey, // Your posting wif
 						"alexmove", // Parent Author
-						test2, // Parent Permlink
+						url_ok, // Parent Permlink
 						votey,
 						permlink, // Your post permlink
 						'', // Title
@@ -167,7 +166,7 @@ let votey = "alexmove";
 						{
 							if (users[post_number].length<500)
 							{
-								answer2 = url+`<BR><br>`+tests+`% <br><br>` +  users[post_number].length +`<br><br>Possible plagiarism detected from <br>`+data.matches[0].url+`<br><br>@ac-cheetah <br><br>`+moderators_list;
+								answer2 = url+`<BR><br>`+tests+`% <br><br>` +  users[post_number].length +`<br><br>Possible plagiarism detected from <br>`+data.matches[0].url+`<br><br>@ac-cheetah @endingplagiarism <br><br>`+moderators_list;
 								
 									console.log(answer2);
 
@@ -187,7 +186,7 @@ let votey = "alexmove";
 							}
 							else
 							{
-								answer2 = answer2 = url+`<BR>`+tests+`% <br> Possible plagiarism detected from<br>`+data.matches[0].url+`<br>`+`<br>@ac-cheetah <br><br>`+moderators_list;
+								answer2 = answer2 = url+`<BR>`+tests+`% <br> Possible plagiarism detected from<br>`+data.matches[0].url+`<br>`+`<br>@ac-cheetah @endingplagiarism <br><br>`+moderators_list;
 	
 	console.log(answer2);
 	
