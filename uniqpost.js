@@ -146,7 +146,8 @@ let votey = "alexmove";
 							 
 							 	console.log(answer2);
 	
-	/*					
+					test2 = "check-for-uniqueness-ok-100-or-more-80";
+					
 		steem.broadcast.comment(
 						wifkey, // Your posting wif
 						"alexmove", // Parent Author
@@ -158,7 +159,7 @@ let votey = "alexmove";
 						{ tags: ['thanks'], app: 'ganeshaway' }, // Json Metadata
 						function(err, result) {
 							console.log(err, result)});
-		*/		
+				
 
 				
 						}
