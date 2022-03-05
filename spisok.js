@@ -25,7 +25,7 @@ config = {
 	var query = { limit : 100, tag : hive_name };
 
 //accounts.forEach(function (element,i,array){
-	
+
 steem.api.getDiscussionsByTrending(query, function(err, result) {
 
 		
