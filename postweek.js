@@ -78,3 +78,7 @@ steem.broadcast.comment(
 
 
 
+fs.truncateSync("./"+bd_name+"week.txt", err => {
+if(err) throw err; // не удалось очистить файл
+   console.log('Файл успешно очищен');
+});
