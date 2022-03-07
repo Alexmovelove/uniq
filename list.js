@@ -88,8 +88,16 @@ fs.appendFileSync("./"+bd_name+"week.txt",notweek);
 	
 
 full = `\n
+
+999 - это не проверенный пост. 
+400 - это ошибка проверки (в частности из-за спец. символов в названии или url) 
+100% - текст полностью уникальный
+от 0 до 100% - это % уникальности 
+
 Подробности о проверках тут:
 Details about checks are here:
+
+https://steemit.com/hive-153018/@alexmove/uniqueness-check-update-run-a-real-time-scan-obnovlenie-proverki-unikalnosti
 
 https://steemit.com/hive-171319/@alexmove/development-of-automation-for-checking-uniqueness-in-steemit-part-5-mysql-connection
 

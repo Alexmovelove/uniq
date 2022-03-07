@@ -29,8 +29,9 @@ let votey = "alexmove";
 	d = d.toJSON().split("T")[0];
 	d = d.replace(/-/gi, '');
 	
+let name_file = "./"+bd_name+"week.txt";
 
-let accounts = fs.readFileSync("./"+bd_name+"week.txt").toString();
+let accounts = fs.readFileSync(name_file).toString();
 	console.log(accounts);
 
 		var currentPath = process.cwd();
@@ -76,9 +77,10 @@ steem.broadcast.comment(
 		function(err, result) {
 			console.log(err, result)});
 
-
-
-fs.truncateSync("./"+bd_name+"week.txt", err => {
-if(err) throw err; // не удалось очистить файл
-   console.log('Файл успешно очищен');
+fs.unlink(name_file, function(err){
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("Файл удалён");
+    }
 });
