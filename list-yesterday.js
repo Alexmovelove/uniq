@@ -5,7 +5,7 @@ var settings = require('./config.js');
 
 let body3R = '';
 let num_day = settings.num_day;
-num_day = num_day - 1;
+num_day = num_day + 1;
 let bd_name = settings.bd_name;
 let hive_name = settings.hive_name;
 let url_post = settings.url_post;

@@ -141,7 +141,7 @@ let votey = "alexmove";
 						let tests = parseFloat(data.percent);
 						console.log(tests);
 
-						if (tests > 85)
+						if (tests > 80)
 						{
 							 answer2 = url+`<BR>`+tests+`% <br> The uniqueness of the text is checked - everything is OK! Thanks! High level of uniqueness: `+tests+`%`;
 							 
@@ -166,7 +166,7 @@ let votey = "alexmove";
 						{
 							if (users[post_number].length<500)
 							{
-								answer2 = url+`<BR><br>`+tests+`% <br><br>` +  users[post_number].length +`<br><br>Possible plagiarism detected from <br>`+data.matches[0].url+`<br><br>@ac-cheetah @endingplagiarism <br><br>`+moderators_list;
+								answer2 = url+`<BR><br>`+tests+`% <br><br>` +  users[post_number].length +`<br><br>Need manual verification <br>`+data.matches[0].url+`<br><br>@ac-cheetah @endingplagiarism <br><br>`+moderators_list;
 								
 									console.log(answer2);
 
@@ -186,7 +186,7 @@ let votey = "alexmove";
 							}
 							else
 							{
-								answer2 = answer2 = url+`<BR>`+tests+`% <br> Possible plagiarism detected from<br>`+data.matches[0].url+`<br>`+`<br>@ac-cheetah @endingplagiarism <br><br>`+moderators_list;
+								answer2 = answer2 = url+`<BR>`+tests+`% <br> Need manual verification<br>`+data.matches[0].url+`<br>`+`<br>@ac-cheetah @endingplagiarism <br><br>`+moderators_list;
 	
 	console.log(answer2);
 	
