@@ -48,6 +48,7 @@ full = `\n
 Подробности о проверках тут:
 Details about checks are here:
 
+https://steemit.com/hive-153018/@alexmove/uniqueness-check-update-run-a-real-time-scan-obnovlenie-proverki-unikalnosti
 https://steemit.com/hive-171319/@alexmove/development-of-automation-for-checking-uniqueness-in-steemit-part-5-mysql-connection
 
 Have a nice day!`;
